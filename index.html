@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Actions Feed</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="homePage">
+            <h1>Sustainable Actions Feed</h1>
+            <div id="postsContainer"></div>
+            <button class="new-post-btn" onclick="showPostPage()">📷</button>
+        </div>
+        <div id="postPage" class="post-page">
+            <h2>Post Your Sustainable Action</h2>
+            <div class="card">
+                <p id="prompt"></p>
+                <div style="position: relative;">
+                    <video id="video" autoplay></video>
+                    <div id="timer" class="timer"></div>
+                </div>
+                <canvas id="canvas" style="display: none;"></canvas>
+                <div>
+                    <button class="capture-btn" onclick="handleCapture()">Capture</button>
+                    <button class="cancel-btn" onclick="handleCancel()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
